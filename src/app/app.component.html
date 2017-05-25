@@ -1,0 +1,27 @@
+<div class="chart-col">
+<div style="position: absolute; top: 50px; left: 50px; right: 50px; bottom: 50px;">
+  <bi-charts-bar-vertical-grouped
+         class="chart-container"
+         [view]="view"
+         [scheme]="colorScheme"
+         [schemeType]="schemeType"
+         [results]="multi"
+         [gradient]="gradient"
+         [xAxis]="showXAxis"
+         [yAxis]="showYAxis"
+         [legend]="showLegend"
+         [legendTitle]="legendTitle"
+         [showXAxisLabel]="showXAxisLabel"
+         [showYAxisLabel]="showYAxisLabel"
+         [tooltipDisabled]="tooltipDisabled"
+         [xAxisLabel]="xAxisLabel"
+         [yAxisLabel]="yAxisLabel"
+         (legendLabelClick)="onLegendLabelClick($event)"
+         [showGridLines]="showGridLines"
+         [barPadding]="barPadding"
+         [groupPadding]="groupPadding"
+         [roundDomains]="roundDomains"
+         (select)="select($event)">
+       </bi-charts-bar-vertical-grouped>
+     </div>
+</div>
